@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "image": "/timeline1.jpeg",
+    "time": 2013,
+    "title": "Lần đầu gặp gỡ",
+    "description": "Ngày ấy vu vơ đăng một dòng status trên facebook than thở, vu vơ đùa giỡn nói chuyện với một người xa lạ chưa từng quen."
+  },
+  {
+    "id": 2,
+    "image": "/timeline2.jpeg",
+    "time": 2023,
+    "title": "Hẹn hò",
+    "description": "Mỗi chiều cuối tuần thường chạy xe vòng quanh qua những con phố, len lỏi trong từng dòng người tấp nập"
+  },
+  {
+    "id": 3,
+    "image": "/timeline3.jpeg",
+    "time": "24-08-2023",
+    "title": "Đính hôn",
+    "description": "Chúng ta từ 2 con người xa lạ mà bước vào cuộc đời nhau. Và giờ đây chúng ta tiếp tục cùng nhau sang trang mới."
+  },
+  {
+    "id": 4,
+    "image": "/timeline4.jpeg",
+    "time": "04-02-2024",
+    "title": "Thành hôn",
+    "description": "Em và anh không chỉ là người yêu mà chúng ta còn là tri kỷ. Ngày hôm nay, em sẽ là cô dâu của anh"
+  }
+]

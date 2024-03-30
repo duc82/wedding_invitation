@@ -1,0 +1,39 @@
+@import "../../scss/media_queries";
+
+.album {
+  padding: 40px 0;
+
+  @include smd {
+    padding: 70px 0;
+  }
+
+  .list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+    .item {
+      border-radius: 8px;
+      overflow: hidden;
+
+      &:hover {
+        img {
+          transform: scale(1.2);
+        }
+      }
+
+      img {
+        transition: 0.3s;
+        object-fit: cover;
+        object-position: center;
+        aspect-ratio: 1 / 1;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    @include md {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}

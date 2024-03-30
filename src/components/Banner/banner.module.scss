@@ -1,0 +1,94 @@
+@import "../../scss/variables";
+@import "../../scss/media_queries";
+
+.bg_top {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.bg_right {
+  position: absolute;
+  top: 40%;
+  right: -50px;
+  max-width: 200px;
+}
+
+.bg_bottom_left {
+  position: absolute;
+  bottom: 0;
+  left: -120px;
+  max-width: 280px;
+
+  @include sm {
+    max-width: 60%;
+  }
+}
+
+.leaf_1 {
+  position: absolute;
+  max-width: 50px;
+  top: 20%;
+  left: 20%;
+}
+
+.leaf_2 {
+  position: absolute;
+  max-width: 80px;
+  bottom: 20%;
+  right: 20%;
+}
+
+.banner_container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  row-gap: 24px;
+  flex-direction: column;
+  min-height: 100vh;
+
+  .title {
+    font-size: 20px;
+    font-family: title-font;
+    margin-bottom: 40px;
+    line-height: 1.2;
+  }
+
+  .name {
+    font-family: script-font;
+    font-size: 44px;
+    line-height: 1.5;
+  }
+
+  .time {
+    font-size: 24px;
+    font-family: title-font;
+    margin-top: 4px;
+    text-transform: uppercase;
+  }
+
+  .date {
+    font-size: 20px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    .day_name {
+      text-transform: uppercase;
+    }
+
+    .date_no {
+      font-size: 32px;
+      font-weight: bold;
+    }
+  }
+
+  .address_name {
+    font-size: 24px;
+    font-family: title-font;
+    margin-top: 4px;
+  }
+}
