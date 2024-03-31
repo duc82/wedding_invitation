@@ -1,12 +1,12 @@
-@import "../../scss/media_queries";
+@import "@/scss/media_queries";
 
-.countdown {
+.section_countdown {
   background: url("/countdown.jpeg") 50% 50% / cover no-repeat;
   color: rgba(255, 255, 255, 0.7);
   padding: 40px 0;
   text-align: center;
 
-  .container {
+  .countdown_container {
     padding: 0 15px;
     max-width: $xl;
     box-sizing: content-box;
@@ -30,24 +30,28 @@
 
       .item {
         flex: 1;
-        background-color: rgba(255, 255, 255, 0.3);
-        backdrop-filter: blur(5px);
-        border: 1px solid rgba(255, 255, 255, 0.25);
-        color: white;
-        padding: 15px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 5px;
-        font-size: 2rem;
-        line-height: 0.8;
 
-        @include sm {
-          font-size: 4rem;
-        }
+        .time {
+          background-color: rgba(255, 255, 255, 0.3);
+          backdrop-filter: blur(5px);
+          border: 1px solid rgba(255, 255, 255, 0.25);
+          color: white;
+          padding: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 5px;
+          font-size: 2rem;
+          line-height: 0.8;
+          margin-bottom: 10px;
 
-        @include md {
-          font-size: 6rem;
+          @include sm {
+            font-size: 4rem;
+          }
+
+          @include md {
+            font-size: 6rem;
+          }
         }
       }
 

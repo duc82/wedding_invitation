@@ -1,4 +1,4 @@
-@import "../../scss/variables";
+@import "@/scss/variables";
 
 .section_invitation {
   padding: 80px 0;
@@ -7,8 +7,10 @@
 .invitation {
   margin-top: 40px;
   display: flex;
+  flex-wrap: wrap;
   gap: 40px;
   justify-content: center;
+  align-items: center;
 
   .card {
     display: flex;

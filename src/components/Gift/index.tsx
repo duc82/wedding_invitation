@@ -6,7 +6,9 @@ const Gift = () => {
   return (
     <section className={`section ${styles.gift}`}>
       <div className="container">
-        <h2 className="heading-small">GỬI QUÀ ĐẾN CÔ DÂU VÀ CHÚ RỂ</h2>
+        <h2 className={`heading-small ${styles.gift_title}`}>
+          Gửi quà đến cô dâu và chú rể
+        </h2>
         <FancyboxProvider>
           <a href="#box-gift" data-fancybox className="btn">
             <svg

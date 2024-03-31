@@ -1,5 +1,5 @@
-@import "../../scss/variables";
-@import "../../scss/media_queries";
+@import "@/scss/variables";
+@import "@/scss/media_queries";
 
 .card {
   display: grid;
@@ -47,6 +47,10 @@
 
       .data {
         margin-left: 0;
+      }
+
+      .media {
+        order: 1;
       }
     }
 

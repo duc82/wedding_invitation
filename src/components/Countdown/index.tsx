@@ -1,9 +1,35 @@
+import { useEffect, useState } from "react";
 import styles from "./countdown.module.scss";
 
-const Countdown = () => {
+const formatInt = (n: number) => (n > 9 ? n : `0${n}`);
+
+const formatDays = (time: number) => Math.floor(time / (1000 * 60 * 60 * 24));
+const formatHours = (time: number) =>
+  Math.floor((time % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+const formatMinutes = (time: number) =>
+  Math.floor((time % (1000 * 60 * 60)) / (1000 * 60));
+const formatSeconds = (time: number) => Math.floor((time % (1000 * 60)) / 1000);
+
+const Countdown = ({ time }: { time: number }) => {
+  const [countdown, setCountdown] = useState<number>(time);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCountdown((prev) => {
+        if (prev <= 0) {
+          clearInterval(interval);
+          return 0;
+        }
+        return prev - 1000;
+      });
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-    <section className={`section ${styles.countdown}`}>
-      <div className={`container ${styles.container}`}>
+    <section className={`section ${styles.section_countdown}`}>
+      <div className={`container ${styles.countdown_container}`}>
         <p>Cùng đếm ngược thời gian</p>
         <h2 className="heading-small">Save the date</h2>
         <svg
@@ -23,10 +49,30 @@ const Countdown = () => {
           ></path>
         </svg>
         <div className={styles.timer}>
-          <div className={styles.item}>00</div>
-          <div className={styles.item}>00</div>
-          <div className={styles.item}>00</div>
-          <div className={styles.item}>00</div>
+          <div className={styles.item}>
+            <div className={styles.time}>
+              {formatInt(formatDays(countdown))}
+            </div>
+            <span className={styles.label}>Ngày</span>
+          </div>
+          <div className={styles.item}>
+            <div className={styles.time}>
+              {formatInt(formatHours(countdown))}
+            </div>
+            <span className={styles.label}>Giờ</span>
+          </div>
+          <div className={styles.item}>
+            <div className={styles.time}>
+              {formatInt(formatMinutes(countdown))}
+            </div>
+            <span className={styles.label}>Phút</span>
+          </div>
+          <div className={styles.item}>
+            <div className={styles.time}>
+              {formatInt(formatSeconds(countdown))}
+            </div>
+            <span className={styles.label}>Giây</span>
+          </div>
         </div>
       </div>
     </section>

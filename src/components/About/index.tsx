@@ -33,8 +33,15 @@ const About = () => {
         </div>
         <div className={styles.card}>
           <div
-            className={styles.data}
+            className={styles.media}
             data-aos="fade-right"
+            data-aos-duration={duration}
+          >
+            <img src="/chure.jpeg" alt="img" />
+          </div>
+          <div
+            className={styles.data}
+            data-aos="fade-left"
             data-aos-duration={duration}
           >
             <h3 className={styles.name}>Công Thành</h3>
@@ -44,13 +51,6 @@ const About = () => {
               người hướng ngoại.
             </p>
             <hr />
-          </div>
-          <div
-            className={styles.media}
-            data-aos="fade-left"
-            data-aos-duration={duration}
-          >
-            <img src="/chure.jpeg" alt="img" />
           </div>
         </div>
       </div>

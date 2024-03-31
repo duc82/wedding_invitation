@@ -5,9 +5,7 @@ const Invitation = () => {
     <section className={`section ${styles.section_invitation}`}>
       <div className="container">
         <div className="section-heading">
-          <h2 className="section-title">
-            <p>Trân trọng kính mời</p>
-          </h2>
+          <h2 className="section-title">Trân trọng kính mời</h2>
         </div>
         <div className={styles.invitation}>
           <div className={styles.card}>

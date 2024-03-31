@@ -27,10 +27,10 @@ const Banner = () => {
         data-aos-duration="2000"
         alt="bottom-left"
       />
+      <img src="/leaf1.png" className={styles.leaf_1} alt="leaf1" />
+      <img src="/leaf2.png" className={styles.leaf_2} alt="leaf2" />
       <div className={`container ${styles.banner_container}`}>
-        <img src="/leaf1.png" className={styles.leaf_1} alt="leaf1" />
-        <img src="/leaf2.png" className={styles.leaf_2} alt="leaf2" />
-        <h1 className={styles.title}>SAVE THE DATE</h1>
+        <h1 className={styles.title}>Save the date</h1>
         <div className={styles.name}>
           {bridegroom}
           <br />

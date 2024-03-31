@@ -1,5 +1,5 @@
-@import "../../scss/variables";
-@import "../../scss/media_queries";
+@import "@/scss/variables";
+@import "@/scss/media_queries";
 
 .bg_top {
   position: absolute;
@@ -54,6 +54,8 @@
     font-family: title-font;
     margin-bottom: 40px;
     line-height: 1.2;
+    margin-top: 8px;
+    text-transform: uppercase;
   }
 
   .name {
