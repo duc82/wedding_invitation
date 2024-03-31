@@ -121,6 +121,21 @@ body {
   }
 }
 
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 12px;
+  background-color: $primary_color;
+  padding: 10px 24px;
+  color: white;
+  border: none;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
 h1,
 h2,
 h3,
@@ -129,7 +144,7 @@ h5,
 h6 {
   font-weight: 400;
   color: currentColor;
-  margin: 8px 0;
+  margin: 0 0 8px 0;
 }
 
 h2 {
@@ -137,6 +152,11 @@ h2 {
 }
 
 h3 {
+  line-height: 1.4;
+}
+
+h4 {
+  font-size: 1.25rem;
   line-height: 1.4;
 }
 
@@ -148,4 +168,35 @@ hr {
   margin: 20px 0;
   border: 0;
   border-top: 1px solid #e5e5e5;
+}
+
+:focus-visible {
+  outline: 2px dotted #333;
+}
+
+select {
+  /* for Firefox */
+  -moz-appearance: none;
+  /* for Chrome */
+  -webkit-appearance: none;
+  appearance: none;
+
+  /* For IE10 */
+  &::-ms-expand {
+    display: none;
+  }
+}
+
+textarea {
+  border: 1px solid rgb(176, 176, 176);
+  text-align: left;
+  padding: 20px;
+  max-width: 90%;
+  margin: 0 auto;
+  resize: none;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: transparent;
+  font-weight: 400;
+  color: inherit;
 }

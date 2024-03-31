@@ -1,0 +1,14 @@
+@import "@/scss/variables";
+
+.gift {
+  padding: 80px 0;
+  background-image: linear-gradient(to top, var(--bg), #fff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  a {
+    margin-top: 40px;
+  }
+}

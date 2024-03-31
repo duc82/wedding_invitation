@@ -1,0 +1,97 @@
+@import "@/scss/variables";
+
+.form {
+  padding: 80px;
+
+  form {
+    width: 680px;
+    max-width: 90%;
+    background-color: whitesmoke;
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 12px;
+    background: url("/form_decoration.jpg") center center / cover no-repeat;
+
+    .form_title {
+      font-size: 32px;
+      font-weight: bold;
+      color: $primary_color;
+    }
+
+    .form_group {
+      display: flex;
+      flex-direction: column;
+      margin-top: 12px;
+      justify-content: center;
+      align-items: center;
+
+      .radio_group {
+        display: flex;
+        gap: 16px;
+        margin-top: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 90%;
+
+        .radio_container {
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          text-transform: uppercase;
+
+          input[type="radio"] {
+            width: 20px;
+            height: 20px;
+            border-radius: 4px;
+            border: 1px solid $primary_color;
+            cursor: pointer;
+            margin-right: 8px;
+            accent-color: $primary_color;
+          }
+        }
+      }
+
+      .input_group {
+        position: relative;
+        display: flex;
+        gap: 6px;
+        flex-direction: column;
+        margin-top: 20px;
+
+        input {
+          border: 1px solid rgb(176, 176, 176);
+          padding: 8px 20px;
+          border-radius: 6px;
+          font-size: 16px;
+          line-height: 1.5;
+          color: inherit;
+          background-color: transparent;
+        }
+
+        .select_group {
+          position: relative;
+          max-width: max-content;
+          margin: 12px auto;
+
+          .select {
+            max-width: 320px;
+            background-color: $primary-color;
+            color: white;
+            padding: 8px 24px;
+            cursor: pointer;
+            text-align: center;
+            font-size: 16px;
+            line-height: 1.5;
+
+            &.num_user {
+              background-color: white;
+              border: 1px solid $primary_color;
+              color: $primary_color;
+            }
+          }
+        }
+      }
+    }
+  }
+}

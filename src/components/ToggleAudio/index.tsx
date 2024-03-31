@@ -1,6 +1,8 @@
 import { useRef, useState } from "react";
 import styles from "./toggle_audio.module.scss";
 
+const song = "/Shane-Filan-Beautiful-In-White.mp3";
+
 const ToggleAudio = () => {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
@@ -23,12 +25,7 @@ const ToggleAudio = () => {
 
   return (
     <>
-      <audio
-        preload="auto"
-        src="/Westlife - My Love.mp3"
-        loop
-        ref={audioRef}
-      ></audio>
+      <audio preload="auto" src={song} loop ref={audioRef}></audio>
       <button
         type="button"
         className={styles.toggle_audio}

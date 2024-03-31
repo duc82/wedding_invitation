@@ -36,7 +36,7 @@ const Mesage = () => {
                 required
               ></textarea>
             </div>
-            <button type="submit" className={styles.btn}>
+            <button type="submit" className="btn">
               Gửi lời chúc
             </button>
           </form>

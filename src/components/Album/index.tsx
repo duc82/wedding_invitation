@@ -8,7 +8,11 @@ const Album = () => {
   );
 
   return (
-    <section className={`section ${styles.album}`}>
+    <section
+      className={`section ${styles.album}`}
+      data-aos="fade-up"
+      data-aos-duration="2000"
+    >
       <div className="section-heading">
         <h2 className="heading-small">Album Ảnh</h2>
       </div>

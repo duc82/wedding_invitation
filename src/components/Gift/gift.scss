@@ -1,0 +1,31 @@
+@import "@/scss/variables";
+
+.box_gift {
+  display: none;
+
+  .gift_container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 30px;
+    width: 320px;
+
+    .gift_card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 12px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: 0 0 4px $primary_color;
+
+      .gift_qr {
+        max-width: 300px;
+
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
